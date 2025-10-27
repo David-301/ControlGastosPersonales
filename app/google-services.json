@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "542855644233",
+    "project_id": "controlgastospersonales-29d5e",
+    "storage_bucket": "controlgastospersonales-29d5e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:542855644233:android:37ec1e1a612b762dccab98",
+        "android_client_info": {
+          "package_name": "com.ch220048.controlgastospersonales"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "542855644233-p366kih5dltofjgbmlql8u2fpjafd242.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ch220048.controlgastospersonales",
+            "certificate_hash": "b064ff4693afc3651bc9b44ee053c9090626f3cc"
+          }
+        },
+        {
+          "client_id": "542855644233-22vcod4snpqj3mchualqrblhovmacliv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoMajJzaaEHF2ylPNwkFOALpwSnV4BNDw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "542855644233-22vcod4snpqj3mchualqrblhovmacliv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

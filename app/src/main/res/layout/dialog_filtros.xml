@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filtrar por Categorías"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:layout_marginBottom="16dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:maxHeight="300dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/cbComida"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Comida"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/cbTransporte"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Transporte"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/cbEntretenimiento"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Entretenimiento"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/cbSalud"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Salud"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/cbEducacion"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Educación"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/cbServicios"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Servicios"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/cbCompras"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Compras"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/cbVivienda"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Vivienda"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/cbOtros"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Otros"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filtrar por Período"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:layout_marginBottom="12dp" />
+
+    <RadioGroup
+        android:id="@+id/rgPeriodo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbTodos"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Todos los períodos"
+            android:textSize="16sp"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/rbEsteMes"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Este mes"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rbMesPasado"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Mes pasado"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rbUltimos3Meses"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Últimos 3 meses"
+            android:textSize="16sp" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:gravity="end">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLimpiarFiltros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Limpiar"
+            android:textColor="#757575"
+            style="@style/Widget.MaterialComponents.Button.TextButton" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCancelarFiltros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancelar"
+            android:layout_marginStart="8dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAplicarFiltros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aplicar"
+            android:layout_marginStart="8dp"
+            app:backgroundTint="#667eea" />
+
+    </LinearLayout>
+
+</LinearLayout>
